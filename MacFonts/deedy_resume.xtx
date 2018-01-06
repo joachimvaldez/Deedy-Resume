@@ -15,16 +15,16 @@
 % default. If you get compilation errors saying a font is missing, find the line
 % on which the font is used and either change it to a font included with your
 % operating system or comment the line out to use the default font.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
 % 2. Figure out a smoother way for the document to flow onto the next page.
 % 3. Add styling information for a "Projects/Hacks" section.
 % 4. Add location/address information
 % 5. Merge OpenFont and MacFonts as a single sty with options.
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % CHANGELOG:
@@ -47,10 +47,10 @@
 
 \documentclass[]{deedy-resume}
 \usepackage{fancyhdr}
- 
+
 \pagestyle{fancy}
 \fancyhf{}
- 
+
 \rfoot{Page \thepage \hspace{1pt}}
 \begin{document}
 
@@ -66,8 +66,12 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Debarghya}{Das}{ \urlstyle{same}\href{http://debarghyadas.com}{debarghyadas.com}| \href{http://fb.co/dd}{fb.co/dd}\\
-\href{mailto:deedy@fb.com}{deedy@fb.com} | 607.379.5733 | \href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
+\namesection{Joachim}{Valdez}{
+  \urlstyle{same}
+  682.438.0910 |
+  \href{mailto:joachimvaldez@gmail.com}{joachimvaldez@gmail.com} |
+  \href{mailto:jjv57@cornell.edu}{jjv57@cornell.edu} |
+  Durham, NC
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -76,68 +80,55 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{minipage}[t]{0.33\textwidth} 
+\begin{minipage}[t]{0.25\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Education} 
+\section{Education}
 
-\subsection{Cornell University}
-\descript{MEng in Computer Science}
-\location{Dec 2014 | Ithaca, NY}
-\sectionsep
 
 \subsection{Cornell University}
 \descript{BS in Computer Science}
-\location{May 2014 | Ithaca, NY}
+\location{May 2015 | Ithaca, NY}
 College of Engineering \\
-Magna Cum Laude\\
-\location{ Cum. GPA: 3.83 / 4.0 \\
-Major GPA: 3.9 / 4.0}
+\location{
+  Cum. GPA: 3.29 / 4.3
+  % Major GPA: ??? / 4.0
+}
 \sectionsep
 
-\subsection{La Martiniere for Boys}
-\location{Grad. May 2011|  Kolkata, India}
+\subsection{The North Hills School}
+\location{Grad. May 2011|  Irving, TX}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
-Facebook:// \href{https://facebook/dd}{\bf dd} \\
-Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
-LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
-YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
-Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
-Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+\section{Links}
+Github:// \href{https://github.com/joachimvaldez}{\bf joachimvaldez} \\
+LinkedIn://  \href{https://www.linkedin.com/in/joachimvaldez}{\bf joachimvaldez} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     COURSEWORK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Coursework}
-\subsection{Graduate}
-Advanced Machine Learning \\
-Open Source Software Engineering \\
-Advanced Interactive Graphics \\
-Compilers + Practicum \\
-Cloud Computing \\
-Evolutionary Computation \\
-Defending Computer Networks \\
-Machine Learning \\
-\sectionsep
 
 \subsection{Undergraduate}
+Machine Learning \\
 Information Retrieval \\
-Operating Systems \\
+Natural Language Processing \\
+Graphics + Practicum \\
+Graphics (Graduate) \\
 Artificial Intelligence + Practicum \\
-Functional Programming \\
-Computer Graphics + Practicum \\
-{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
 Unix Tools and Scripting \\
+Operating Systems \\
+Functional Programming \\
+OOP
+{\footnotesize \textit{\textbf{(Teaching Asst) }}} \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     SKILLS
@@ -145,14 +136,41 @@ Unix Tools and Scripting \\
 
 \section{Skills}
 \subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} Python \textbullet{} Javascript \\
-OCaml \textbullet{} Matlab \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
-\location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+
+\location{Proficient:}
+Java \textbullet{}
+Go \textbullet{}
+Shell \textbullet{}
+Python \textbullet{}
+Objective-C \textbullet{}
+
+JavaScript (Node.js)
 \sectionsep
+
+\location{Have used:}
+OCaml \textbullet{}
+C \textbullet{}
+C++ \textbullet{}
+HTML/CSS/JavaScript \textbullet{}
+
+Swift 
+\textbullet{}
+Scala \textbullet{}
+Matlab \textbullet{}
+\LaTeX\ \textbullet{}
+Assembly \textbullet{}
+GLSL \textbullet{}
+Expect \\
+\sectionsep
+
+\location{Familiar:}
+Android \textbullet{}
+PostgreSQL \textbullet{}
+MySQL
+\sectionsep
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -160,85 +178,104 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\end{minipage} 
+\end{minipage}
 \hfill
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.74\textwidth}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Facebook}
-\descript{| Software Engineer }
-\location{Jan 2015 - Present | New York, NY}
-\sectionsep
+  \runsubsection{IBM Cloud Foundry \href{https://code.cloudfoundry.org/cf-networking-release}{Container Networking}}
+  \descript{| Software Engineer }
+  \location{January 2017 - Present | Durham, NC}
+  \vspace{\topsep} % Hacky fix for awkward extra vertical space
+  \vspace{\topsep} % Hacky fix for awkward extra vertical space
+  \begin{tightemize}
+    \item Open-source contributions to Cloud Foundry, a PaaS for app developers to manage/scale apps, microservices
+    \item Allowed direct app-to-app networking across distributed containers
+    \item Set up linux network devices to create virtual L3 overlay \href{code.cloudfoundry.org/silk}{network}
+    \item Designed \href{https://code.cloudfoundry.silk}{silk} connectivity system to allocate subnet leases across cluster, mitigating against network partitions
+    \item Wrote golang CLI and API server for developers to configure network access
+  \end{tightemize}
+  \sectionsep
+  % reducing latency and allowing app-level security policies
 
-\runsubsection{Coursera}
-\descript{| KPCB Fellow + Software Engineering Intern }
-\location{June 2014 – Sep 2014 | Mountain View, CA}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
-\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
-\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
-\end{tightemize}
-\sectionsep
+  \runsubsection{IBM Bluemix}
+  \descript{| Software Engineer }
+  \location{October 2016 - January 2017 | Durham, NC}
+  \vspace{\topsep} % Hacky fix for awkward extra vertical space
+  \begin{tightemize}
+    \item Spearheaded migration to Diego backend from deprecated DEAs for IBM Bluemix
+    \item Migration affected over 225K applications in 3 environments with minimal outages
+    \item Created tools to notify/email users of migration
+    \item Reviewed Scala code for IBM OpenWhisk, a Bluemix application
+  \end{tightemize}
+  \sectionsep
+    % \item Scale up and down VMs on deployments
 
-\runsubsection{Google}
-\descript{| Software Engineering Intern }
-\location{May 2013 – Aug 2013 | Mountain View, CA}
-\begin{tightemize}
-\item Worked on the YouTube Captions team, in Javascript and Python to plan, to design and develop the full stack to add and edit Automatic Speech Recognition captions. In production.\item Created a backbone.js-like framework for the Captions editor.\end{tightemize}
-\sectionsep
+  \runsubsection{IBM Cloud Foundry Diego}
+  \descript{| Software Engineer }
+  \location{May 2016 - October 2016 | Durham, NC}
+  \vspace{\topsep} % Hacky fix for awkward extra vertical space
+  \begin{tightemize}
+    \item Wrote golang for \href{https://code.cloudfoundry.org/diego-release}{Diego}, the container runtime orchestrator that schedules applications
+    \item Used Bosh to deploy Cloud Foundry tools to different IaaS, such as AWS, Google Cloud Platform, Softlayer
+  \end{tightemize}
+  \sectionsep
 
-\runsubsection{Phabricator}
-\descript{| Open Source Contributor \& Team Leader}
-\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
-\begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
-\sectionsep
+  \runsubsection{IBM MobileFirst}
+  \descript{| Software Engineer }
+  \location{June 2015 - May 2016 | Durham, NC}
+  \vspace{\topsep} % Hacky fix for awkward extra vertical space
+  \begin{tightemize}
+    \item Built a command line interface for developers to configure their mobile applications
+    \item Created a automated test framework using Java and Expect/Tcl for testing user interactions with CLI
+    \item Used Node.js, npm, grunt, Cordova, bash
+    \item Eclipse plugin development for Eclips ThyM
+  \end{tightemize}
+  \sectionsep
+
+  \runsubsection{Hulu}
+  \descript{| iOS Software Engineering Intern }
+  \location{June 2013 – August 2013 | Santa Monica, CA}
+  \vspace{\topsep} % Hacky fix for awkward extra vertical space
+  \begin{tightemize}\item iPad and iPhone software maintenance, UI design, testing
+    \item Migrated and optimized iOS6 code to iOS7
+    \item Added features such as new trays and list layouts to the iPad app
+  \end{tightemize}
+  \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
+%     PROJECTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Researcher}
-\location{Jan 2014 – Jan 2015 | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+\section{Projects}
+
+  \runsubsection{Dime}
+  \descript{| Software Engineer }
+  \location{Summer 2014 }
+  \vspace{\topsep} % Hacky fix for awkward extra vertical space
+  \begin{tightemize}
+    \item Created site that allows users to tip YouTube videos with Bitcoin
+    % \item Wrote project in Python, JavaScript, (S)CSS, HTML, Bash
+    \item Made use of YouTube, Google+, Facebook, Coinbase, Twitter APIs
+    \item Used Python on Google App Engine, including NDB, webapp2, Jinja2
+    \item Used JS libraries/tools like jQuery, Closure Compiler, Grunt, Handlebars.js
+  \end{tightemize}
+  \sectionsep
+
+  % \runsubsection{Slider Ball}
+  % \descript{| iOS Developer }
+  % \location{Winter 2012 }
+  % \vspace{\topsep} % Hacky fix for awkward extra vertical space
+  % \begin{tightemize}
+  %   \item Developed casual game (Slider Ball) for iOS App Store
+  %   \item Used cocos2d, Box2D, and Apple Game Center APIs
+  % \end{tightemize}
+
 \sectionsep
 
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-\end{tabular}
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     PUBLICATIONS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Publications} 
-\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
-\bibliographystyle{abbrv}
-\bibliography{publications}
-\nocite{*}
-
-\end{minipage} 
+\end{minipage}
 \end{document}  \documentclass[]{article}
